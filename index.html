@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta description="Australian npm mirror">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+  <style type="text/css">
+
+body {
+    color: #777;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 2em;
+  max-width: 800px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+
+.header {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.content-subhead {
+  margin: 50px 0 20px 0;
+  font-weight: 300;
+  color: #888;
+}
+
+  </style>
+  <title>npm Australian mirror</title>
+</head>
+<body>
+  <div id="layout">
+    <div id="main">
+      <div class="header">
+        <h1>npm Australian mirror</h1>
+      </div>
+      <div class="content">
+
+	<h2 class="content-subhead">Why?</h2>
+
+        <p>Installing from npm is always a pain from this side of the planet, particularly when you have a lot of dependencies to install and particularly when you've experienced it from a computer located in North America.</p>
+
+	<div style="margin: 0 auto; text-align: center;">
+          <img src="https://npmjs.org/static/npm.png" width="259" height="101">
+        </div>
+
+        <p>For a little while now I've been maintaining a mirror of the npm registry running out of the AWS datacentre in Sydney and it's an absolute pleasure to be able to <code>npm install</code> and have it complete in a couple of seconds. I'm now confident enough to share it with anyone else who would like to be able to do quick installs.</p>
+
+	<h2 class="content-subhead">How?</h2>
+
+        <p>All you need to do is set your npm registry to: <code>http://npm.nodejs.org.au:5984/registry/_design/app/_rewrite</code></p>
+
+        <p>You won't be able to <i>publish</i> to it, so you have switch back to the standard registry to do that. You either have to remove or comment out that line, or be a little more clever.</p>
+
+        <p>Thankfully, <b><a href="https://github.com/deoxxa">@deoxxa</a></b> has already thought of this and has a great script that I can recommend: <b><a href="https://github.com/deoxxa/npmrc">npmrc</a></b>.</p>
+
+        <p>Simply <code>npm install npmrc -g</code> then run <code>npmrc</code> to initialise your <i>~/.npmrcs</i> directory with your default npm configuration. Then type <code>npmrc -c au</code> to make a new configuration named "au". Use <code>npm set registry http://npm.nodejs.org.au:5984/registry/_design/app/_rewrite</code>. Then you can switch between the default and the au registries with <code>npmrc default</code> and <code>npmrc au</code>.
+
+	<h2 class="content-subhead">Note</h2>
+
+        <p>Please note that this registry is not on a particularly fast link, so don't hammer it! Donations or other support welcome from interested to upgrade the service.</p>
+
+        <p><b>Please</b> do not attempt to replicate from the Australian mirror, if you want to make your own mirror, replicate from registry.npmjs.org.</p>
+
+        <p><i>npm is &copy; Isaac Z. Schlueter, the npm Australian mirror is not affiliated with Isaac Z. Schlueter or the official npm project in any way.</i></p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
