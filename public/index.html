@@ -61,13 +61,13 @@ body {
 
 	<h2 class="content-subhead">How?</h2>
 
-        <p>All you need to do is set your npm registry to: <code>http://npm.nodejs.org.au:5984/registry/_design/app/_rewrite</code></p>
+        <p>All you need to do is set your npm registry to: <code>http://registry.nodejs.org.au/</code></p>
 
         <p>You won't be able to <i>publish</i> to it, so you have switch back to the standard registry to do that. You either have to remove or comment out that line, or be a little more clever.</p>
 
         <p>Thankfully, <b><a href="https://github.com/deoxxa">@deoxxa</a></b> has already thought of this and has a great script that I can recommend: <b><a href="https://github.com/deoxxa/npmrc">npmrc</a></b>.</p>
 
-        <p>Simply <code>npm install npmrc -g</code> then run <code>npmrc</code> to initialise your <i>~/.npmrcs</i> directory with your default npm configuration. Then type <code>npmrc -c au</code> to make a new configuration named "au". Use <code>npm set registry http://npm.nodejs.org.au:5984/registry/_design/app/_rewrite</code>. Then you can switch between the default and the au registries with <code>npmrc default</code> and <code>npmrc au</code>.
+        <p>Simply <code>npm install npmrc -g</code> then run <code>npmrc</code> to initialise your <i>~/.npmrcs</i> directory with your default npm configuration. Then type <code>npmrc -c au</code> to make a new configuration named "au". Use <code>npm set registry http://registry.nodejs.org.au/</code>. Then you can switch between the default and the au registries with <code>npmrc default</code> and <code>npmrc au</code>.
 
 	<h2 class="content-subhead">Note</h2>
 
