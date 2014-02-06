@@ -4,7 +4,7 @@
   "description": "npm.nodejs.org.au",
   "main": "index.js",
   "scripts": {
-    "start": "st -p $PORT -d $(pwd) -i index.html"
+    "start": "st -p $PORT -d $(pwd)/public/ -i index.html"
   },
   "author": "rvagg",
   "license": "private",
