@@ -9,6 +9,6 @@
   "author": "rvagg",
   "license": "private",
   "dependencies": {
-    "st": "~0.2.5 >=0.2.5"
+    "st": "^0.3.1"
   }
 }
