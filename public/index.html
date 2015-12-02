@@ -32,61 +32,18 @@ body, a, a:visited, a:hover {
   font-weight: 300;
 }
 
-.content-subhead {
-  margin: 50px 0 20px 0;
-  font-weight: 300;
-  color: #888;
-}
-
   </style>
-  <title>npm Australian mirror</title>
+  <title>[deprecated] npm Australian mirror</title>
 </head>
 <body>
   <div id="layout">
     <div id="main">
       <div class="header">
-        <h1>npm Australian mirror</h1>
+        <h1>npm Australian mirror (deprecated)</h1>
       </div>
       <div class="content">
-
-        <h2 class="content-subhead">Why?</h2>
-
-        <p>Installing from npm is always a pain from this side of the planet, particularly when you have a lot of dependencies to install and particularly when you've experienced it from a computer located in North America.</p>
-
-        <div style="margin: 0 auto; text-align: center;">
-          <img src="https://npmjs.org/static/img/npm.png" width="259" height="101">
-        </div>
-
-        <p>The npm Australian mirror is a synchronised "full fat" version of the npm registry&mdash;that is, it contains package metadata and the tarball attachments themselves. The mirror runs out of the AWS Sydney datacentre.</p>
-
-        <p>Please note that this is <b><i>not an official project of npm Inc. and is not officially affiliated with npm Inc. or Isaac Schlueter</i></b> (although npm Inc. is kind enough to offer support where needed!)</p>
-
-        <p>If you use the main npm registry you're now taking advantage of Fastly delivering your tarballs via their CDN and they have an endpoint in Australia. If you'd like to try and decrease the latency problems a little more then you can try out the npm Australia mirror.</p>
-
-        <h2 class="content-subhead">How?</h2>
-
-        <p>All you need to do is set your npm registry to: <b><code>http://registry.npmjs.org.au/</code></b></p>
-
-        <p>You won't be able to <i>publish</i> to it, so you have switch back to the standard registry to do that. You either have to remove or comment out that line, or be a little more clever.</p>
-
-        <p>Thankfully, <b><a href="https://github.com/deoxxa">@deoxxa</a></b> has already thought of this and has a great script that I can recommend: <b><a href="https://github.com/deoxxa/npmrc">npmrc</a></b>.</p>
-
-        <p>Simply <code>npm install npmrc -g</code> then run <code>npmrc</code> to initialise your <i>~/.npmrcs</i> directory with your default npm configuration. Then type <code>npmrc -c au</code> to make a new configuration named "au".<p>
-
-        <p>Use:</p>
-
-        <blockquote><b><code>npm set registry http://registry.npmjs.org.au/</code></b></blockquote>
-
-        <p>Then you can switch between the default and the au registries with <code>npmrc default</code> and <code>npmrc au</code>.</p>
-
-        <h2 class="content-subhead">Note</h2>
-
-        <p>Please note that this registry is not on a particularly fast link, so don't hammer it! Donations or other support welcome from interested to upgrade the service.</p>
-
-        <p><b>Please</b> do not attempt to replicate from the Australian mirror, if you want to make your own mirror, replicate from registry.npmjs.org.</p>
-
-        <p><i>npm is &copy; Isaac Z. Schlueter, the npm Australian mirror is not affiliated with Isaac Z. Schlueter, npm Inc. or the official npm project in any way.</i></p>
-
+        <p>The Australian npm mirror used to be a thing, which was created and supported by the Australian node community to help improve npm responsiveness here in the APAC region.</p>
+        <p>Thanks to <a href="https://www.npmjs.com/about#about-npm-inc">npm, Inc</a> though the speed of npm in the APAC region has improved greatly, and so; this mirror can finally rest.</p>
       </div>
     </div>
   </div>
